@@ -1,0 +1,73 @@
+
+/*
+ * ChapelCookies plugin file
+ *
+ * @package ChapelCookies\Public\Assets\Scss
+ */
+
+$color-highlight: #cccccc;
+$color-text: #4a4a4a;
+$color-background: #ffffff;
+$color-button-text: #ffffff;
+$color-link: #cccccc;
+
+#cc_status {
+    font-size: 14px;
+    color: white;
+    background-color: $color-background;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    padding: 15px 45px 15px 30px;
+    border-left: 20px solid $color-highlight;
+    max-width: 320px;
+    border-top-left-radius: 6px;
+    z-index: 9999999999999;
+    h4 {
+        font-size: 16px;
+        font-weight: bold;
+        color: $color-highlight;
+    }
+    a {
+        color: $color-link;
+        text-decoration: none;
+        &:focus,
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    hr {
+        margin: 5px 0px;
+        border-color: transparent;
+    }
+    .exit {
+        display: inline-block;
+        font-size: 12px;
+        font-weight: bold;
+        padding: 5px 10px;
+        margin-bottom: 15px;
+        border: 2px solid $color-button-text;
+        border-radius: 4px;
+        color: $color-button-text;
+        background-color: $color-highlight;
+        cursor: pointer;
+    }
+    .exit:focus,
+    .exit:hover {
+        border: 2px solid $color-button-text;
+        color: $color-highlight;
+        background-color: $color-button-text;
+    }
+
+    #cc_credits {
+        position: absolute;
+        bottom: 0;
+        left: 30;
+        padding: 5px 0px;
+    }
+
+    .agree {
+        cursor: pointer;
+        text-shadow: 0;
+    }
+}
